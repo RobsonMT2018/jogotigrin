@@ -6,3 +6,9 @@
 <p>:grin: se acerta 2 numero ,  recebera + 0.50 de valor</p>
 <p>:grin: se acerta 3 numero ,  recebera + 1.50 de valor</p>
 <p>:stuck_out_tongue_closed_eyes: se acerta 3 numero e numero for 777 multiplicara o valor atual por 7</p>
+
+
+## Status do Projeto
+<h2 align="center"> 
+	🚧  React Select 🚀 Em construção...  🚧
+</h2>
