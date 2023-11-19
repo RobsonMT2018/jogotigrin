@@ -10,5 +10,5 @@
 
 ## Status do Projeto
 <h2 align="center"> 
-	🚧  React Select 🚀 Em construção...  🚧
+	🚧  Em construção...  🚧
 </h2>
