@@ -1,4 +1,4 @@
-###  :seven: :seven: :seven: Jogo do Tigrin 
+###  :seven: :seven: :seven: <p>Jogo do Tigrin 
 <h2> :warning: Simulador de um jogo Caça-níqueis aonde tem 3 sequencia de numero de 1-7</h2>
 <h1> :unamused: Condiçoes de acertos:</h1>
 <p>:wink: O jogador começara com 15 rodadas de cretido</p>
