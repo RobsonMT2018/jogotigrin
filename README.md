@@ -1,6 +1,6 @@
 ### Jogo do Tigrin 
 <h4> :warning: Simulador de um jogo Caça-níqueis aonde tem 3 sequencia de numero de 1-7</h4>
-<h3> :unamused: Condiçoes de acertos:</h3>
+<h4> :unamused: Condiçoes de acertos:</h4>
 <h4><p>:wink: O jogador começará com 15 rodadas de créditos</p></h4>
 <h4><p>:grin: se acertar 1 numero , recebera + 0.25 de valor</p></h3>
 <h4><p>:grin: se acertar 2 numero ,  recebera + 0.50 de valor</p></h4>
