@@ -23,16 +23,16 @@ function addficha(){
 }
 
 function acertou1num(){
-    pontos = pontos + 1;
+    pontos = pontos + 0.25;
 }
 
 function acertou2num(){
-    pontos = pontos + 2;
+    pontos = pontos + 0.5;
     document.getElementById("pontos").innerHTML = "Pontos = " + pontos;
 }
 
 function acertou3num(){
-    pontos = pontos + 3;
+    pontos = pontos + 1.5;
     document.getElementById("pontos").innerHTML = "Pontos = " + pontos;
 }
 
