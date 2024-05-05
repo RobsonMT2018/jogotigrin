@@ -13,47 +13,52 @@
         <div class ="form">
             <form>
 
-          
                
                 <div  class="subtitle">
-                    <label id="jogada">Status</label><br>
+                    <label class="sub" id="jogada">Status</label><br>
                 </div>
+                
                 <div class="title">
                     <label id="A">7</label>
                     <label id="B">7</label>
                     <label id="C">7</label><br>
                     <div class="aviso"><label >A B C</label><br></div>
                 </div>
-             
-            
+                         
 
                 <div class="info">
                     <label id="jogadas">Jogadas: 0</label><br>
-                    <label id="pontos">Placar: </label><br>
+                    <label id="pontos">Placar: 0 </label><br>
                 </div>
                 
 
                 <div class="info2">
-                    <label id="apost">Creditos: 15</label><br>
-                    <label id="apost1">Ficha: 0</label><br>
+                    <label id="apost">Creditos: 0</label><br>
+                    <label id="apost1">Ficha: 0</label>
                 </div>
 
                 <div>
                     <input class="btn" type="button" onclick="jogar()" value="Jogar">
                 </div>
-                
 
-                <div class="info3">                    
-                    <input type="number" id="ficha" min="0" max="10" >
-                    <input type="button"  value="Apostar">
+                <div>
+
+
                 </div>
-                
+
+                <div class="info3">
+                    <div id="div">
+                        <input type="number" id="ficha" min="0" max="30" value="0" >
+                    </div>        
+                    <button type="button" onclick="Mudarestado('div') ,addficha()" >Apostar</button> 
+                   
+                    
+                   
+                </div>
+                 
             </form>
         </div>
        
-
-      
-        
     
 </body>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
