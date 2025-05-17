@@ -1,4 +1,4 @@
-📍Máquina Cassanique
+📍Máquina Caça Niquel 1
 
 <h4>:warning: Simulador de um jogo Caça-níqueis aonde tem 3 sequencia de numero de 1-7 :warning: <h4> 
 <h4> :unamused: Condiçoes de acertos:</h4>
