@@ -2,7 +2,7 @@
 ---------------------------------------------------------
 🔗 Descrição
 
-<p>Este projeto é uma jogo simpes de aposta.</p>
+<p>Este projeto é uma jogo simpes de aposta com efeitos sonoros.</p>
 
 <h4>:warning: Simulador de um jogo Caça-níqueis aonde tem 3 sequencia de numero de 1-7 :warning: <h4> 
 <h4> :unamused: Condiçoes de acertos:</h4>
@@ -21,7 +21,8 @@
 ---------------------------------------------------------
 📸Sreenshots
 
-[aling=center]![imgJogo](https://github.com/user-attachments/assets/8200aa33-fe4c-4bef-91cc-9c039a2c9510)
+![imgJogo](https://github.com/user-attachments/assets/8200aa33-fe4c-4bef-91cc-9c039a2c9510)
+
 
 
 ---------------------------------------------------------
