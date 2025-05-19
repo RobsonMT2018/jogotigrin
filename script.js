@@ -4,7 +4,16 @@
     let pontos = 0;
     let AdicionarCredito = 0;
     let multCredito = 0;
+    ganhou = false;
 
+  
+    
+    const clickSound = new Audio('click.mp3');         // Audio para o clique
+    const coinSound = new Audio('coin.mp3');           // Audio para o coin
+    const winSound = new Audio('vitory.mp3');          // Audio para o win
+    const gameOverSound = new Audio('error.mp3');      // Audio para o game over
+    const backgroundMusic = new Audio('teste6.mp3');   // Audio para a música de fundo
+    
 
 function getRandomInt(max , min) {
     
@@ -52,8 +61,9 @@ function acertou3num(){
 function setenum(){
     pontos = pontos * 0.7;
     document.getElementById("pontos").innerHTML = "Pontos = R$" + pontos;
-    console.log("777");
+    alert("ACERTOU 777");
 }
+
 
 function sum(){
     placar++;
@@ -73,6 +83,7 @@ function sub(){
         document.getElementById("apost").innerHTML =  "Creditos: " + multCredito;
         alert("acabou os creditos");
         Mudarestado(el);
+        gameOverSound.play();
     }
        
 }
@@ -84,9 +95,9 @@ function Update(){
     var b = getRandomInt(7,1);
     var c = getRandomInt(7,1);
 
-    document.getElementById("A").textContent = "|" + a + "|";
-    document.getElementById("B").textContent = "|" + b + "|";
-    document.getElementById("C").textContent = "|" + c + "|";
+    document.getElementById("A").textContent = "" + a + "";
+    document.getElementById("B").textContent = "" + b + "";
+    document.getElementById("C").textContent = "" + c + "";
 
     document.getElementById("pontos").textContent = "Pontos = " + pontos;
     document.getElementById("apost").textContent = "Creditos: " + multCredito; 
@@ -102,8 +113,9 @@ function Update(){
         if(a!=b || a!=c || b!=c){
 
             if(pontos>=0){
-                acertou3num();
-                document.getElementById("jogada").textContent = "ACERTOU A B C";
+                    acertou3num();
+                    document.getElementById("jogada").textContent = "ACERTOU A B C";
+                    coinSound.play();
             }
 
             if(pontos>=1){
@@ -116,6 +128,7 @@ function Update(){
                 if(pontos>=0){
                     acertou2num();
                     document.getElementById("jogada").textContent = "ACERTOU A e B";
+                    coinSound.play();
                 }
             }
 
@@ -123,6 +136,7 @@ function Update(){
                 if(pontos>=0){
                     acertou2num();
                     document.getElementById("jogada").textContent = "ACERTOU B e C";
+                    coinSound.play();
                 }
             }
 
@@ -130,11 +144,28 @@ function Update(){
                 if(pontos>=0){
                     acertou2num();
                     document.getElementById("jogada").textContent = "ACERTOU A e C";
+                    coinSound.play();
                 }
             }
        
     }else if(a==7&&b==7&&c==7){
+
+        // Se o jogador acertar 777, chama a função setenum
         setenum();
+        ganhou = true;
+ 
+
+
+        if (ganhou) {
+            musicOn = false; // Desativa a música
+            backgroundMusic.pause(); // Pausa a música de fundo
+
+            // Exibe um alerta de vitória e toca o som de vitória
+            alert("Parabéns! Você ganhou!", "Você ganhou 10 pontos!");
+            winSound.play(); 
+            pontos += 10; // Adiciona 10 pontos ao jogador
+            ganhou = false; // Reinicia a variável para permitir que o jogador ganhe novamente
+        }
     }
 
     }
@@ -146,9 +177,27 @@ function jogar(){
     sub();
     sum();
     Update();
+    clickSound.currentTime = 0;
+    clickSound.play();
+    backgroundMusic.play();
 }
 
+// ...código existente...
 
+let musicOn = false;
+
+document.getElementById('toggleMusic').onclick = function() {
+    if (musicOn) {
+        backgroundMusic.pause();
+        this.textContent = "🔇";
+    } else {
+        backgroundMusic.play();
+        this.textContent = "🔊";
+    }
+    musicOn = !musicOn;
+};
+
+// ...código existente...
 //Fazer função de add Credito
 
 
