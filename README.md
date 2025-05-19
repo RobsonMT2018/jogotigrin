@@ -21,7 +21,7 @@
 ---------------------------------------------------------
 📸Sreenshots
 
-![imgJogo](https://github.com/user-attachments/assets/8200aa33-fe4c-4bef-91cc-9c039a2c9510)
+[aling=center]![imgJogo](https://github.com/user-attachments/assets/8200aa33-fe4c-4bef-91cc-9c039a2c9510)
 
 
 ---------------------------------------------------------
