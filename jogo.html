@@ -18,11 +18,11 @@
                     <label class="sub" id="jogada">Status</label><br>
                 </div>
                 
-                <div class="title">
-                    <label id="A">7</label>
-                    <label id="B">7</label>
-                    <label id="C">7</label><br>
-                    <div class="aviso"><label >A B C</label><br></div>
+                <div class="title"  align="center">
+                    <label id="A">0</label>
+                    <label id="B">0</label>
+                    <label id="C">0</label><br>
+                    <div class="aviso"><label ></label><br></div>
                 </div>
                          
 
@@ -37,25 +37,24 @@
                     <label id="apost1">Ficha: 0</label>
                 </div>
 
-                <div>
+                <div  align="right">
                     <input class="btn" type="button" onclick="jogar()" value="Jogar">
                 </div>
+                
+                <div class="info3" align="center">
 
-                <div>
+                    <div  id="div" align="left">
+                        <input type="number" id="ficha" min="0" max="50" value="0" >
+                    </div> 
 
-
+                    <div align="left">
+                        <button type="button" onclick="Mudarestado('div') ,addficha()">Apostar</button> 
+                    </div>     
+                       
                 </div>
 
-                <div class="info3">
-                    <div id="div">
-                        <input type="number" id="ficha" min="0" max="30" value="0" >
-                    </div>        
-                    <button type="button" onclick="Mudarestado('div') ,addficha()" >Apostar</button> 
-                   
-                    
-                   
-                </div>
-                 
+                 <!-- Adicione dentro do <body>, antes do <div class="form"> -->
+                <button id="toggleMusic" type="button" style="position:absolute;top:20px;right:20px;z-index:10;">🔊</button>
             </form>
         </div>
        
